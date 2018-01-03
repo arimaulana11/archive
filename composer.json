@@ -1,0 +1,19 @@
+{
+    "name": "webcore/timezones",
+    "description": "Demo package to show time",
+    "authors": [
+        {
+            "name": "test",
+            "email": "apiall80@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/tada1011/compress"
+        }
+    ],
+    "require": {}
+}
