@@ -1,5 +1,5 @@
 {
-    "name": "webcore/timezones",
+    "name": "compress",
     "description": "Demo package to show time",
     "authors": [
         {
@@ -11,7 +11,7 @@
     "type": "project",
     "repositories": [
         {
-            "type": "vcs",
+            "type": "git",
             "url": "https://github.com/tada1011/compress"
         }
     ],

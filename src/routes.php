@@ -1,3 +1,3 @@
 <?php
 
-Route::get('timezones/{timezone?}', 'Webcore\Timezones\TimezonesController@index');
+Route::get('compress/{timezone?}', 'Compress\CompressController@index');

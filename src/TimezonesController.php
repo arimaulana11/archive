@@ -1,11 +1,11 @@
 <?php
 
-namespace Webcore\Timezones;
+namespace Compress;
 
 use App\Http\Controllers\Controller;
 use Carbon\Carbon;
 
-class TimezonesController extends Controller
+class CompressController extends Controller
 {
     public function index($timezone = NULL)
     {
@@ -13,6 +13,6 @@ class TimezonesController extends Controller
             ? Carbon::now(str_replace('-', '/', $timezone))
             : Carbon::now();
 
-        return view('timezones::time', compact('current_time'));
+        return view('compress::time', compact('current_time'));
     }
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace Webcore\Timezones;
+namespace Compress;
 
 use Illuminate\Support\ServiceProvider;
 
-class TimezonesServiceProvider extends ServiceProvider
+class CompressServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -15,10 +15,10 @@ class TimezonesServiceProvider extends ServiceProvider
     {
         require __DIR__.'/routes.php';
 
-        $this->loadViewsFrom(__DIR__.'/views', 'timezones');
+        $this->loadViewsFrom(__DIR__.'/views', 'compress');
 
         $this->publishes([
-            __DIR__.'/views' => base_path('resources/views/webcore/timezones'),
+            __DIR__.'/views' => base_path('resources/views/compress'),
         ], 'views');
     }
 
@@ -29,6 +29,6 @@ class TimezonesServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('Webcore\Timezones\TimezonesController');
+        $this->app->make('Compress\CompressController');
     }
 }
