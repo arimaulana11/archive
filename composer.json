@@ -8,7 +8,6 @@
         }
     ],
     "license": "MIT",
-    "type": "project",
     "repositories": [
         {
             "type": "git",
